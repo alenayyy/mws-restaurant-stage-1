@@ -423,3 +423,20 @@ header h1 a {
   font-weight: 600;
   font-size: 1.2em;
 }
+
+.skip-link {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  background: #f5d6aa;
+  padding: 8px;
+  z-index: 1000;
+  color: black !important;
+  width: 100px;
+  font-size: 12pt;
+  border-radius: 15px;
+}
+
+.skip-link:focus {
+  top: 0;
+}

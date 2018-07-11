@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -17,10 +17,10 @@
 </head>
 </head>
 
-<body>
+<body id= "good-food">
   <header>
     <nav class="header">
-      <img src="../img/logo31.png" />
+      <img src="../img/logo31.png" alt="Logo Good Food Company">
       <h1><a href="/"> Restaurants Near You</a></h1>
     </nav>
   </header>
@@ -29,18 +29,21 @@
     <section>
       <div class="hero-image">
         <div class="filter-options">
+          <label>
           <h2>Find Near Me</h2>
-          <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
-            <option value="all">All Neighborhoods</option>
-          </select>
-          <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
-            <option value="all">All Cuisines</option>
-          </select>
+            <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+              <option value="all">All Neighborhoods</option>
+            </select>
+
+            <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+              <option value="all">All Cuisines</option>
+            </select>
+          </label>
         </div>
       </div>
-
+      <a href="#restaurants-list" class="skip-link">Skip map</a>
       <section id="map-container">
-        <div id="map"></div>
+        <div id="map" role="application" aria-label="map"></div>
       </section>
 
       <ul id="restaurants-list"></ul>
@@ -67,7 +70,7 @@
   <footer id="footer">
     <section>
       <p>
-        © 2018 <a href="/"><strong>GOOD FOOD - Restaurant Reviews</strong></a>
+        © 2018 <a href="#good-food"><strong>GOOD FOOD - Restaurant Reviews</strong></a>
       </p>
     </section>
     <section>

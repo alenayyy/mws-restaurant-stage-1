@@ -24,19 +24,21 @@
   <header>
     <!-- Beginning nav -->
     <nav class="header">
-      <img src="../img/logo31.png" />
+      <img src="../img/logo31.png" alt="Logo Good Food Company"/>
       <h1><a href="/"> Restaurants Near You</a></h1>
+
     </nav>
+
     <!-- End nav -->
   </header>
   <!-- End header -->
 
   <!-- Beginning breadcrumb -->
-  <ul id="breadcrumb" >
+  <ul id="breadcrumb" role="application" aria-label="map">
     <li><a href="/">Home</a></li>
   </ul>
   <!-- End breadcrumb -->
-
+  <a href="#restaurant-container" class="skip-link">Skip map</a>
   <!-- Beginning main -->
   <main id="maincontent">
     <!-- Beginning map -->
@@ -45,7 +47,7 @@
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section id="restaurant-container">
+    <section id="restaurant-container" tabindex="-1">
       <h1 id="restaurant-name"></h1>
       <img id="restaurant-img">
       <div id= "rest">
